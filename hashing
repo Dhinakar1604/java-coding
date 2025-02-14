@@ -1,0 +1,35 @@
+// "static void main" must be defined in a public class.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        
+     
+   HashMap<String,String> map = new HashMap<>();
+        //insertion
+        map.put("TN", "Tamilnadu");
+         map.put("KL","Kerala");
+        map.put("KA","Karntaka");
+        //serach
+        System.out.println(map.get("TN"));
+        System.out.println(map.get("KL"));
+        System.out.println(map.getOrDefault("AP","Not found"));
+        
+    System.out.println(map.keySet());
+        System.out.println(map.values());
+        
+        
+        map.remove("KL");
+         System.out.println(map.keySet());
+        System.out.println(map.values());
+     
+for (String value: map.values()) {
+    System.out.println(map.values());
+    System.out.println("values");
+    
+}
+         System.out.println("Size of map: " + map.size());
+        System.out.println("is the key empty" + map.isEmpty());
+        }
+        
+        
+  }
